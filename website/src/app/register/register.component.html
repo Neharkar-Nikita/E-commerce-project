@@ -1,0 +1,83 @@
+
+ <div class="form-group text-center" style="padding-top:100px;">
+    <img src="../../assets/login logo.png" width="100px" height="100px" alt="">
+</div><br>
+<form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
+    <div class="form-row" style="padding: 10px;">
+        <div class="form-group col-md-6">
+          <label for="inputtext">First Name:<span class="text-danger">*</span></label>
+          <input class="form-control" ngModel type="text" name="name" id="inputtext" placeholder=" Enter First Name" required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputtext">Last Name: </label>
+          <input  class="form-control" ngModel type="text" name="lastname" id="inputtext" placeholder=" Enter Last name">
+        </div>
+      </div>
+    <div class="form-row" style="padding: 10px;">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email:<span class="text-danger">*</span></label>
+        <input  class="form-control" ngModel type="email" name="email" id="inputEmail4" placeholder="Email" required="true">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Password:<span class="text-danger">*</span></label>
+        <input  class="form-control" ngModel type="password" name="password" id="inputPassword4" placeholder="Password" required="true">
+        <small id="passwordHelpBlock" class="form-text text-muted">
+            Must be 8-20 characters long. 
+          </small>
+      </div>
+    </div>
+    <div class="form-row" style="padding: 10px;">
+        <div class="form-group col-md-6">
+          <label for="inputnumber">Mobile Number:<span class="text-danger">*</span></label>
+          <input  class="form-control" ngModel type="number" name="mobileno" id="inputnumber" placeholder="Mobile Number" required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputtext">Address:</label>
+          <input  class="form-control" ngModel type="text" name="address" id="inputtext" placeholder="Apartment, studio, or floor">
+        </div>
+      </div>
+    
+    <div class="form-row" style="padding: 10px;">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City:</label>
+        <input  class="form-control" ngModel type="text" name="city" id="inputCity" >
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State:</label>
+        <select id="inputState" class="form-control" ngModel type="text" name="state" >
+          <option selected>Select</option>
+          <option>Andra Pradesh</option>
+          <option>Goa</option>
+          <option>Gujarat</option>
+          <option>Haryana</option>
+          <option>Karnataka</option>
+          <option>Kerala</option>
+          <option>Madya Pradesh</option>
+          <option>Maharashtra</option>
+          <option>Punjab</option>
+          <option>Rajasthan</option>
+        
+
+          
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip:</label>
+        <input  class="form-control" ngModel type="number" name="zip" id="inputZip" >
+      </div>
+    </div>
+    <div class="form-group" style="padding: 10px;">
+      <div class="form-check">
+        <input class="form-check-input" ngModel type="checkbox" name="check" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-md-12 text-center"> 
+        <button type="submit" class="btn btn-success btn-lg"> 
+          Signup
+        </button> 
+    </div> 
+  </form>
+

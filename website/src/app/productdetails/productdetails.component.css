@@ -1,0 +1,26 @@
+h6
+{
+    color: gray;
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+h1
+{
+    font-family: 'Roboto Slab', serif;
+    padding-left: 10px;
+    
+}
+
+h4
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    padding-left: 10px;
+}
+h5
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    padding-left: 10px;
+}

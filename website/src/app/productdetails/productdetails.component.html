@@ -1,0 +1,48 @@
+<img src="../../assets/veg-logo.webp" width="25px" height="25px" style="margin-left: 25px; margin-top: 25px;">
+<div class="row" >
+       
+    <div class="col-lg-4 text-center">
+            <img width="300px" height="300px" src="http://localhost:3004/{{products.productImagePath}}" alt="">
+        </div>
+
+
+    <div class="col-lg-8  bg-gray">
+       <h1>
+          Name : {{products.name}}
+       </h1>
+       <hr>
+       <h4>
+         Category :    {{products.category.name}}
+       </h4>
+       <hr>
+       <h5>
+        <span>
+            Price :  {{products.price}} <h6>(Inclusive of all taxes)</h6><br>
+            <p>
+                Pack size : {{products.packsize}}
+               </p><h6><i class="fas fa-truck"></i> Standard Delivery: Tomorrow Evening</h6>
+           </span>
+       </h5>
+       
+       <hr>
+       
+       <h5>
+           Select Qty:
+           <span>
+            <select name="" id="" #ingre_qty>
+                <option value="1">1Kg</option>
+                <option value="2">2kg</option>
+                <option value="3">3kg</option>
+                <option value="4">4kg</option>
+                <option value="5">5kg</option>
+            </select>
+        </span>
+       </h5>
+       
+       <hr>
+       <button (click)="addTocart()" class="btn btn-success text-light"> 
+        <i class="fas fa-shopping-basket"></i> Add to Basket
+       </button>
+    </div>
+</div>
+
